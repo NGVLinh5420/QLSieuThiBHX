@@ -121,20 +121,71 @@
     <value>19, 14</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="menuStrip.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 16.2pt, style=Bold</value>
+  </data>
+  <data name="msiNhanVien.Size" type="System.Drawing.Size, System.Drawing">
+    <value>266, 42</value>
+  </data>
+  <data name="msiNhanVien.Text" xml:space="preserve">
+    <value>Nhân Viên</value>
+  </data>
+  <data name="msiKhachHang.Size" type="System.Drawing.Size, System.Drawing">
+    <value>266, 42</value>
+  </data>
+  <data name="msiKhachHang.Text" xml:space="preserve">
+    <value>Khách Hàng</value>
+  </data>
+  <data name="msiSanPham.Size" type="System.Drawing.Size, System.Drawing">
+    <value>266, 42</value>
+  </data>
+  <data name="msiSanPham.Text" xml:space="preserve">
+    <value>Sản Phẩm</value>
+  </data>
+  <data name="msiHoaDon.Size" type="System.Drawing.Size, System.Drawing">
+    <value>266, 42</value>
+  </data>
+  <data name="msiHoaDon.Text" xml:space="preserve">
+    <value>Hoá Đơn</value>
+  </data>
   <data name="msQuanLy.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 26</value>
+    <value>137, 42</value>
   </data>
   <data name="msQuanLy.Text" xml:space="preserve">
     <value>Quản Lý</value>
   </data>
   <data name="msThongKe.Size" type="System.Drawing.Size, System.Drawing">
-    <value>86, 26</value>
+    <value>156, 42</value>
   </data>
   <data name="msThongKe.Text" xml:space="preserve">
     <value>Thống Kê</value>
   </data>
+  <data name="msiDSNV.Size" type="System.Drawing.Size, System.Drawing">
+    <value>311, 42</value>
+  </data>
+  <data name="msiDSNV.Text" xml:space="preserve">
+    <value>DS Nhân Viên</value>
+  </data>
+  <data name="msiDSKH.Size" type="System.Drawing.Size, System.Drawing">
+    <value>311, 42</value>
+  </data>
+  <data name="msiDSKH.Text" xml:space="preserve">
+    <value>DS Khách Hàng</value>
+  </data>
+  <data name="msiDSSP.Size" type="System.Drawing.Size, System.Drawing">
+    <value>311, 42</value>
+  </data>
+  <data name="msiDSSP.Text" xml:space="preserve">
+    <value>DS Sản Phẩm</value>
+  </data>
+  <data name="msiDSHD.Size" type="System.Drawing.Size, System.Drawing">
+    <value>311, 42</value>
+  </data>
+  <data name="msiDSHD.Text" xml:space="preserve">
+    <value>DS Hoá Đơn</value>
+  </data>
   <data name="msXuatFile.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 26</value>
+    <value>146, 42</value>
   </data>
   <data name="msXuatFile.Text" xml:space="preserve">
     <value>Xuất File</value>
@@ -143,7 +194,7 @@
     <value>0, 0</value>
   </data>
   <data name="menuStrip.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1382, 28</value>
+    <value>1382, 46</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="menuStrip.TabIndex" type="System.Int32, mscorlib">
@@ -164,51 +215,27 @@
   <data name="&gt;&gt;menuStrip.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="msiNhanVien.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 26</value>
-  </data>
-  <data name="msiNhanVien.Text" xml:space="preserve">
-    <value>Nhân Viên</value>
-  </data>
-  <data name="msiKhachHang.Size" type="System.Drawing.Size, System.Drawing">
-    <value>172, 26</value>
-  </data>
-  <data name="msiKhachHang.Text" xml:space="preserve">
-    <value>Khách Hàng</value>
-  </data>
-  <data name="msiSanPham.Size" type="System.Drawing.Size, System.Drawing">
-    <value>172, 26</value>
-  </data>
-  <data name="msiSanPham.Text" xml:space="preserve">
-    <value>Sản Phẩm</value>
-  </data>
-  <data name="msiHoaDon.Size" type="System.Drawing.Size, System.Drawing">
-    <value>172, 26</value>
-  </data>
-  <data name="msiHoaDon.Text" xml:space="preserve">
-    <value>Hoá Đơn</value>
-  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="labelBHX.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom</value>
-  </data>
-  <data name="labelBHX.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="labelBHX.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 36pt, style=Bold</value>
   </data>
   <data name="labelBHX.Location" type="System.Drawing.Point, System.Drawing">
-    <value>174, 314</value>
+    <value>65, 286</value>
   </data>
   <data name="labelBHX.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1101, 69</value>
+    <value>1305, 101</value>
   </data>
   <data name="labelBHX.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
   <data name="labelBHX.Text" xml:space="preserve">
     <value>QUẢN LÝ SIÊU THỊ BÁCH HOÁ XANH</value>
+  </data>
+  <data name="labelBHX.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
   </data>
   <data name="&gt;&gt;labelBHX.Name" xml:space="preserve">
     <value>labelBHX</value>
@@ -220,12 +247,9 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;labelBHX.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>1</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="$this.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
@@ -565,7 +589,7 @@
 </value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>QUẢN LÝ SIÊU THỊ BÁCH HOÁ XANH</value>
+    <value>QUẢN LÝ SIÊU THỊ BÁCH HOÁ XANH (Chi Nhánh Số 12 - Thủ Đức)</value>
   </data>
   <data name="&gt;&gt;msQuanLy.Name" xml:space="preserve">
     <value>msQuanLy</value>
@@ -607,6 +631,30 @@
     <value>msXuatFile</value>
   </data>
   <data name="&gt;&gt;msXuatFile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;msiDSNV.Name" xml:space="preserve">
+    <value>msiDSNV</value>
+  </data>
+  <data name="&gt;&gt;msiDSNV.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;msiDSKH.Name" xml:space="preserve">
+    <value>msiDSKH</value>
+  </data>
+  <data name="&gt;&gt;msiDSKH.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;msiDSSP.Name" xml:space="preserve">
+    <value>msiDSSP</value>
+  </data>
+  <data name="&gt;&gt;msiDSSP.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;msiDSHD.Name" xml:space="preserve">
+    <value>msiDSHD</value>
+  </data>
+  <data name="&gt;&gt;msiDSHD.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">

@@ -130,6 +130,7 @@
   <ItemGroup>
     <Content Include="DB_File\QLSieuThiBHX_V1.0.sql" />
     <Content Include="DB_File\QLSieuThiBHX_V2.0.sql" />
+    <Content Include="DB_File\Thống Kê.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

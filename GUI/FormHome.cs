@@ -76,15 +76,27 @@ namespace QLSieuThiBHX
         {
             //
             labelBHX.Visible = false;
+            FormHoaDon formHoaDon = new FormHoaDon();
+
+            
 
             if (Application.OpenForms.Count > 1)
             {
-                MessageBox.Show("Hãy Đóng Cửa Sổ Đang Mở!!");
-                return;
+                Form openningForm = Application.OpenForms[1];
+
+                string msg = "Đóng Ngay Cửa Sổ Đang Mở!!";
+                DialogResult result = MessageBox.Show(msg, "Thông Báo!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (result == DialogResult.Yes)
+                {
+                    openningForm.Close();
+
+                    formHoaDon.MdiParent = this;
+                    formHoaDon.Show();
+                }
+                else return;
             }
 
             //
-            FormHoaDon formHoaDon = new FormHoaDon();
             formHoaDon.MdiParent = this;
             formHoaDon.Show();
         }
@@ -96,15 +108,14 @@ namespace QLSieuThiBHX
 
             if (Application.OpenForms.Count > 1)
             {
-                MessageBox.Show("Hãy Đóng Cửa Sổ Đang Mở!!");
-                return;
+                string msg = "Có cửa sổ chưa đóng!! \nNếu tắt chương trình ngay, bạn sẽ có thể sẽ mất dữ liệu (!) \nBạn có chắc chắn muốn thoát chương trình?";
+                DialogResult result = MessageBox.Show(msg, "Thoát", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (result != DialogResult.Yes)
+                    e.Cancel = true;
             }
 
-            //
-            //string msg = "Bạn có chắc chắn muốn thoát chương trình ?";
-            //var result = MessageBox.Show(msg, "Thoát", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            //if (result != DialogResult.Yes)
-            //    e.Cancel = true;
+            //MessageBox.Show("Hãy Đóng Cửa Sổ Đang Mở!!");
+            //return;
         }
     }
 }

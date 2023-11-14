@@ -38,21 +38,27 @@
             this.msThongKe = new System.Windows.Forms.ToolStripMenuItem();
             this.msXuatFile = new System.Windows.Forms.ToolStripMenuItem();
             this.labelBHX = new System.Windows.Forms.Label();
+            this.msiDSNV = new System.Windows.Forms.ToolStripMenuItem();
+            this.msiDSKH = new System.Windows.Forms.ToolStripMenuItem();
+            this.msiDSSP = new System.Windows.Forms.ToolStripMenuItem();
+            this.msiDSHD = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip
             // 
+            this.menuStrip.BackColor = System.Drawing.SystemColors.MenuBar;
+            resources.ApplyResources(this.menuStrip, "menuStrip");
             this.menuStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.msQuanLy,
             this.msThongKe,
             this.msXuatFile});
-            resources.ApplyResources(this.menuStrip, "menuStrip");
             this.menuStrip.Name = "menuStrip";
             // 
             // msQuanLy
             // 
+            this.msQuanLy.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.msQuanLy.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.msiNhanVien,
             this.msiKhachHang,
@@ -92,14 +98,40 @@
             // 
             // msXuatFile
             // 
+            this.msXuatFile.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.msiDSNV,
+            this.msiDSKH,
+            this.msiDSSP,
+            this.msiDSHD});
             this.msXuatFile.Name = "msXuatFile";
             resources.ApplyResources(this.msXuatFile, "msXuatFile");
             // 
             // labelBHX
             // 
             resources.ApplyResources(this.labelBHX, "labelBHX");
-            this.labelBHX.ForeColor = System.Drawing.Color.ForestGreen;
+            this.labelBHX.BackColor = System.Drawing.Color.Transparent;
+            this.labelBHX.ForeColor = System.Drawing.Color.Lime;
             this.labelBHX.Name = "labelBHX";
+            // 
+            // msiDSNV
+            // 
+            this.msiDSNV.Name = "msiDSNV";
+            resources.ApplyResources(this.msiDSNV, "msiDSNV");
+            // 
+            // msiDSKH
+            // 
+            this.msiDSKH.Name = "msiDSKH";
+            resources.ApplyResources(this.msiDSKH, "msiDSKH");
+            // 
+            // msiDSSP
+            // 
+            this.msiDSSP.Name = "msiDSSP";
+            resources.ApplyResources(this.msiDSSP, "msiDSSP");
+            // 
+            // msiDSHD
+            // 
+            this.msiDSHD.Name = "msiDSHD";
+            resources.ApplyResources(this.msiDSHD, "msiDSHD");
             // 
             // FormHome
             // 
@@ -129,6 +161,10 @@
         private System.Windows.Forms.ToolStripMenuItem msThongKe;
         private System.Windows.Forms.ToolStripMenuItem msXuatFile;
         private System.Windows.Forms.Label labelBHX;
+        private System.Windows.Forms.ToolStripMenuItem msiDSNV;
+        private System.Windows.Forms.ToolStripMenuItem msiDSKH;
+        private System.Windows.Forms.ToolStripMenuItem msiDSSP;
+        private System.Windows.Forms.ToolStripMenuItem msiDSHD;
     }
 }
 

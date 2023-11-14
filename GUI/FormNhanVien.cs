@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -28,7 +29,8 @@ namespace QLSieuThiBHX
             cobGioiTinh.SelectedIndex = 0;
 
             //Format DateTimePicker
-            dtpNhanVien.CustomFormat = "MM/dd/yyyy";
+            //dtpNhanVien.CustomFormat = "MM/dd/yyyy";
+            dtpNhanVien.CustomFormat = "dd/MM/yyyy";
 
             //
             LoadListView_NhanVien();
@@ -44,7 +46,7 @@ namespace QLSieuThiBHX
                 txtMaNV.Text = item.SubItems[0].Text;
                 txtHoNV.Text = item.SubItems[1].Text;
                 txtTenNV.Text = item.SubItems[2].Text;
-                dtpNhanVien.Value = DateTime.Parse(item.SubItems[4].Text);
+                dtpNhanVien.Text = item.SubItems[4].Text;
                 txtDiaChiNV.Text = item.SubItems[5].Text;
                 txtSDTNV.Text = item.SubItems[6].Text;
 
@@ -85,7 +87,11 @@ namespace QLSieuThiBHX
                 subItem = new ListViewItem.ListViewSubItem(item, i.GioiTinhNV.ToString());
                 item.SubItems.Add(subItem);
 
-                subItem = new ListViewItem.ListViewSubItem(item, DateTime.Parse(i.NgSNV.ToString()).ToShortDateString());
+                string ngS = DateTime.Parse(i.NgSNV.ToString()).ToShortDateString();
+                //string[] date = ngS.Split('/');
+                //ngS = date[1] + "/" + date[0] + "/" + date[2];
+
+                subItem = new ListViewItem.ListViewSubItem(item, ngS);
                 item.SubItems.Add(subItem);
 
                 subItem = new ListViewItem.ListViewSubItem(item, i.DiaChiNV.ToString());
@@ -209,7 +215,7 @@ namespace QLSieuThiBHX
         {
             Refresh_TextBoxNV();
         }
-      
+
         //Number Only
         private void txtSDTNV_KeyPress(object sender, KeyPressEventArgs e)
         {

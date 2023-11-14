@@ -137,7 +137,7 @@ namespace QLSieuThiBHX.GUI
 
         }
 
-        private void lvHD_SelectedIndexChanged(object sender, EventArgs e)
+        private void lvHoaDon_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (lvHoaDon.SelectedItems.Count == 1)
             {
@@ -146,7 +146,7 @@ namespace QLSieuThiBHX.GUI
                 txtMaHD.Text = maHD;
                 dtpHoaDon.Value = DateTime.Parse(item.SubItems[1].Text);
 
-                //
+                // Tên Nhân Viên
                 string queryNV = $"SELECT (NV.HoNV + ' ' + NV.TenNV) AS \"HoTenNV\"\r\nFROM NHANVIEN NV, HOADON HD\r\nWHERE HD.MaHD = '{maHD}' AND NV.MaNV = HD.MaNV";
                 DataTable tableNV = DataProvider.Instance.ExecuteQuery(queryNV);
 
@@ -161,7 +161,7 @@ namespace QLSieuThiBHX.GUI
                 LoadComboBox();
                 cobTenNV.SelectedText = hoTenNV;
 
-                //
+                // Tên Khách Hàng
                 string queryKH = $"SELECT KH.HoTenKH\r\nFROM KHACHHANG KH, HOADON HD\r\nWHERE HD.MaHD = '{maHD}' AND KH.MaKH = HD.MaKH";
                 DataTable tableKH = DataProvider.Instance.ExecuteQuery(queryKH);
 
