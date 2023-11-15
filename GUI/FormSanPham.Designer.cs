@@ -75,6 +75,8 @@
             // 
             // cobDonViSP
             // 
+            this.cobDonViSP.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cobDonViSP.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cobDonViSP.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cobDonViSP.FormattingEnabled = true;
             this.cobDonViSP.Items.AddRange(new object[] {

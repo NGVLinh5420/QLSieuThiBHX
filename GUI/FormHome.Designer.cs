@@ -34,15 +34,14 @@
             this.msiNhanVien = new System.Windows.Forms.ToolStripMenuItem();
             this.msiKhachHang = new System.Windows.Forms.ToolStripMenuItem();
             this.msiSanPham = new System.Windows.Forms.ToolStripMenuItem();
-            this.msiHoaDon = new System.Windows.Forms.ToolStripMenuItem();
-            this.msThongKe_TK = new System.Windows.Forms.ToolStripMenuItem();
+            this.msThongKe = new System.Windows.Forms.ToolStripMenuItem();
             this.msXuatFile = new System.Windows.Forms.ToolStripMenuItem();
             this.msiDSNV = new System.Windows.Forms.ToolStripMenuItem();
             this.msiDSKH = new System.Windows.Forms.ToolStripMenuItem();
             this.msiDSSP = new System.Windows.Forms.ToolStripMenuItem();
             this.msiDSHD = new System.Windows.Forms.ToolStripMenuItem();
             this.labelBHX = new System.Windows.Forms.Label();
-            this.directorySearcher1 = new System.DirectoryServices.DirectorySearcher();
+            this.smiHoaDon = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,7 +52,7 @@
             this.menuStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.msQuanLy,
-            this.msThongKe_TK,
+            this.msThongKe,
             this.msXuatFile});
             this.menuStrip.Name = "menuStrip";
             // 
@@ -64,7 +63,7 @@
             this.msiNhanVien,
             this.msiKhachHang,
             this.msiSanPham,
-            this.msiHoaDon});
+            this.smiHoaDon});
             this.msQuanLy.Name = "msQuanLy";
             resources.ApplyResources(this.msQuanLy, "msQuanLy");
             // 
@@ -86,16 +85,11 @@
             resources.ApplyResources(this.msiSanPham, "msiSanPham");
             this.msiSanPham.Click += new System.EventHandler(this.msiSanPham_Click);
             // 
-            // msiHoaDon
+            // msThongKe
             // 
-            this.msiHoaDon.Name = "msiHoaDon";
-            resources.ApplyResources(this.msiHoaDon, "msiHoaDon");
-            this.msiHoaDon.Click += new System.EventHandler(this.msiHoaDon_Click);
-            // 
-            // msThongKe_TK
-            // 
-            this.msThongKe_TK.Name = "msThongKe_TK";
-            resources.ApplyResources(this.msThongKe_TK, "msThongKe_TK");
+            this.msThongKe.Name = "msThongKe";
+            resources.ApplyResources(this.msThongKe, "msThongKe");
+            this.msThongKe.Click += new System.EventHandler(this.msThongKe_TK_Click);
             // 
             // msXuatFile
             // 
@@ -134,11 +128,11 @@
             this.labelBHX.ForeColor = System.Drawing.Color.Lime;
             this.labelBHX.Name = "labelBHX";
             // 
-            // directorySearcher1
+            // smiHoaDon
             // 
-            this.directorySearcher1.ClientTimeout = System.TimeSpan.Parse("-00:00:01");
-            this.directorySearcher1.ServerPageTimeLimit = System.TimeSpan.Parse("-00:00:01");
-            this.directorySearcher1.ServerTimeLimit = System.TimeSpan.Parse("-00:00:01");
+            this.smiHoaDon.Name = "smiHoaDon";
+            resources.ApplyResources(this.smiHoaDon, "smiHoaDon");
+            this.smiHoaDon.Click += new System.EventHandler(this.smiHoaDon_Click);
             // 
             // FormHome
             // 
@@ -165,15 +159,14 @@
         private System.Windows.Forms.ToolStripMenuItem msiNhanVien;
         private System.Windows.Forms.ToolStripMenuItem msiKhachHang;
         private System.Windows.Forms.ToolStripMenuItem msiSanPham;
-        private System.Windows.Forms.ToolStripMenuItem msiHoaDon;
-        private System.Windows.Forms.ToolStripMenuItem msThongKe_TK;
+        private System.Windows.Forms.ToolStripMenuItem msThongKe;
         private System.Windows.Forms.ToolStripMenuItem msXuatFile;
         private System.Windows.Forms.Label labelBHX;
         private System.Windows.Forms.ToolStripMenuItem msiDSNV;
         private System.Windows.Forms.ToolStripMenuItem msiDSKH;
         private System.Windows.Forms.ToolStripMenuItem msiDSSP;
         private System.Windows.Forms.ToolStripMenuItem msiDSHD;
-        private System.DirectoryServices.DirectorySearcher directorySearcher1;
+        private System.Windows.Forms.ToolStripMenuItem smiHoaDon;
     }
 }
 

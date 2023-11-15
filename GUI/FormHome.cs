@@ -118,15 +118,44 @@ namespace QLSieuThiBHX
             formSanPham.MdiParent = this;
             formSanPham.Show();
         }
-
-        private void msiHoaDon_Click(object sender, EventArgs e)
+        private void smiHoaDon_Click(object sender, EventArgs e)
         {
             //
             msQuanLy.BackColor = Color.Yellow;
+
+            //
+            FormSanPham formSanPham = new FormSanPham();
+
+            //Bắt lỗis
+            if (Application.OpenForms.Count > 1) //Hoặc cho '== 1'
+            {
+                formOpenning = Application.OpenForms[1]; /* Mặc định chỉ cho phép mở 1-WindowChild[1] trong WindowMDI[0]
+                                                          * Gán formOpenning => form đang mở hiện tại
+                                                          */
+
+                string msg = "Có Cửa Sổ Khác Đang Mở. \nĐóng Nó Lại Và Mở Cửa Sổ Mới?";
+                DialogResult result = MessageBox.Show(msg, "Thông Báo!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (result == DialogResult.Yes) //Nhấn YES -> Đóng Window //Nhấn NO -> Không làm gì.
+                {
+                    formOpenning.Close();
+                }
+                else return;
+            }
+
+            //
+            formSanPham.MdiParent = this;
+            formSanPham.Show();
+        }
+
+        //FORM THỐNG KÊ
+        private void msThongKe_TK_Click(object sender, EventArgs e)
+        {
+            //
+            msThongKe.BackColor = Color.Yellow;
             labelBHX.Visible = false; //Khi mở form child, dòng chữ BHX sẽ ẩn đi.
 
             //
-            FormHoaDon formHoaDon = new FormHoaDon();
+            FormThongKe formThongKe = new FormThongKe();
 
             //Bắt lỗi
             if (Application.OpenForms.Count > 1) //Hoặc cho '== 1'
@@ -145,8 +174,8 @@ namespace QLSieuThiBHX
             }
 
             //
-            formHoaDon.MdiParent = this;
-            formHoaDon.Show();
+            formThongKe.MdiParent = this;
+            formThongKe.Show();
         }
 
         private void FormHome_FormClosing(object sender, FormClosingEventArgs e)
@@ -172,7 +201,14 @@ namespace QLSieuThiBHX
         {
             labelBHX.Visible = false; //Khi mở form child, dòng chữ BHX sẽ ẩn đi.
 
-            if (Application.OpenForms.Count == 1) labelBHX.Visible = true;
+
+            if (Application.OpenForms.Count == 1)
+            {
+                labelBHX.Visible = true;
+                msThongKe.BackColor = SystemColors.Menu;
+            }
         }
+
+        
     }
 }

@@ -288,6 +288,8 @@
             // 
             // cobGioiTinh
             // 
+            this.cobGioiTinh.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cobGioiTinh.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cobGioiTinh.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cobGioiTinh.Items.AddRange(new object[] {
             "NAM",

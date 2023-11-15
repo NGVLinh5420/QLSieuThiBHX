@@ -59,11 +59,11 @@
     <Compile Include="DTO\DTO_NhanVien.cs" />
     <Compile Include="DTO\DTO_SanPham.cs" />
     <Compile Include="DTO\DTO_SP_SoLuong.cs" />
-    <Compile Include="GUI\FormHoaDon.cs">
+    <Compile Include="GUI\FormThongKe.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\FormHoaDon.Designer.cs">
-      <DependentUpon>FormHoaDon.cs</DependentUpon>
+    <Compile Include="GUI\FormThongKe.Designer.cs">
+      <DependentUpon>FormThongKe.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\FormKhachHang.cs">
       <SubType>Form</SubType>
@@ -89,16 +89,16 @@
     <Compile Include="GUI\FormSanPham.Designer.cs">
       <DependentUpon>FormSanPham.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\FormThongKe_TK.cs">
+    <Compile Include="GUI\FormHoaDon.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\FormThongKe_TK.Designer.cs">
-      <DependentUpon>FormThongKe_TK.cs</DependentUpon>
+    <Compile Include="GUI\FormHoaDon.Designer.cs">
+      <DependentUpon>FormHoaDon.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="GUI\FormHoaDon.resx">
-      <DependentUpon>FormHoaDon.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\FormThongKe.resx">
+      <DependentUpon>FormThongKe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\FormKhachHang.resx">
       <DependentUpon>FormKhachHang.cs</DependentUpon>
@@ -112,8 +112,8 @@
     <EmbeddedResource Include="GUI\FormSanPham.resx">
       <DependentUpon>FormSanPham.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\FormThongKe_TK.resx">
-      <DependentUpon>FormThongKe_TK.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\FormHoaDon.resx">
+      <DependentUpon>FormHoaDon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
