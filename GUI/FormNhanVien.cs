@@ -181,7 +181,7 @@ namespace QLSieuThiBHX
                     {
                         if (maNV.Equals(listNV[i].MaNV.ToString()))
                         {
-                            MessageBox.Show("Sửa Trùng Mã Nhân Viên!!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            MessageBox.Show("Sửa Trùng Với Mã Nhân Viên ĐÃ CÓ!!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                             return;
                         }
                     }
@@ -216,7 +216,7 @@ namespace QLSieuThiBHX
             Refresh_TextBoxNV();
         }
 
-        //Number Only
+        //SDT: Input Number Only
         private void txtSDTNV_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))

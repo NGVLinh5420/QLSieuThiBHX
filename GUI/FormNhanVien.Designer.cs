@@ -119,12 +119,11 @@
             // 
             // columnHeader5
             // 
-            this.columnHeader5.Text = "Ngày Sinh (M/D/Y)";
+            this.columnHeader5.Text = "Ngày Sinh";
             this.columnHeader5.Width = 227;
             // 
             // columnHeader6
             // 
-            this.columnHeader6.DisplayIndex = 4;
             this.columnHeader6.Text = "Địa Chỉ";
             this.columnHeader6.Width = 234;
             // 

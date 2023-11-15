@@ -35,13 +35,14 @@
             this.msiKhachHang = new System.Windows.Forms.ToolStripMenuItem();
             this.msiSanPham = new System.Windows.Forms.ToolStripMenuItem();
             this.msiHoaDon = new System.Windows.Forms.ToolStripMenuItem();
-            this.msThongKe = new System.Windows.Forms.ToolStripMenuItem();
+            this.msThongKe_TK = new System.Windows.Forms.ToolStripMenuItem();
             this.msXuatFile = new System.Windows.Forms.ToolStripMenuItem();
-            this.labelBHX = new System.Windows.Forms.Label();
             this.msiDSNV = new System.Windows.Forms.ToolStripMenuItem();
             this.msiDSKH = new System.Windows.Forms.ToolStripMenuItem();
             this.msiDSSP = new System.Windows.Forms.ToolStripMenuItem();
             this.msiDSHD = new System.Windows.Forms.ToolStripMenuItem();
+            this.labelBHX = new System.Windows.Forms.Label();
+            this.directorySearcher1 = new System.DirectoryServices.DirectorySearcher();
             this.menuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -52,13 +53,13 @@
             this.menuStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.msQuanLy,
-            this.msThongKe,
+            this.msThongKe_TK,
             this.msXuatFile});
             this.menuStrip.Name = "menuStrip";
             // 
             // msQuanLy
             // 
-            this.msQuanLy.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.msQuanLy.BackColor = System.Drawing.SystemColors.MenuBar;
             this.msQuanLy.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.msiNhanVien,
             this.msiKhachHang,
@@ -91,10 +92,10 @@
             resources.ApplyResources(this.msiHoaDon, "msiHoaDon");
             this.msiHoaDon.Click += new System.EventHandler(this.msiHoaDon_Click);
             // 
-            // msThongKe
+            // msThongKe_TK
             // 
-            this.msThongKe.Name = "msThongKe";
-            resources.ApplyResources(this.msThongKe, "msThongKe");
+            this.msThongKe_TK.Name = "msThongKe_TK";
+            resources.ApplyResources(this.msThongKe_TK, "msThongKe_TK");
             // 
             // msXuatFile
             // 
@@ -105,13 +106,6 @@
             this.msiDSHD});
             this.msXuatFile.Name = "msXuatFile";
             resources.ApplyResources(this.msXuatFile, "msXuatFile");
-            // 
-            // labelBHX
-            // 
-            resources.ApplyResources(this.labelBHX, "labelBHX");
-            this.labelBHX.BackColor = System.Drawing.Color.Transparent;
-            this.labelBHX.ForeColor = System.Drawing.Color.Lime;
-            this.labelBHX.Name = "labelBHX";
             // 
             // msiDSNV
             // 
@@ -133,6 +127,19 @@
             this.msiDSHD.Name = "msiDSHD";
             resources.ApplyResources(this.msiDSHD, "msiDSHD");
             // 
+            // labelBHX
+            // 
+            resources.ApplyResources(this.labelBHX, "labelBHX");
+            this.labelBHX.BackColor = System.Drawing.Color.Transparent;
+            this.labelBHX.ForeColor = System.Drawing.Color.Lime;
+            this.labelBHX.Name = "labelBHX";
+            // 
+            // directorySearcher1
+            // 
+            this.directorySearcher1.ClientTimeout = System.TimeSpan.Parse("-00:00:01");
+            this.directorySearcher1.ServerPageTimeLimit = System.TimeSpan.Parse("-00:00:01");
+            this.directorySearcher1.ServerTimeLimit = System.TimeSpan.Parse("-00:00:01");
+            // 
             // FormHome
             // 
             resources.ApplyResources(this, "$this");
@@ -144,6 +151,7 @@
             this.Name = "FormHome";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormHome_FormClosing);
+            this.MdiChildActivate += new System.EventHandler(this.FormHome_MdiChildActivate);
             this.menuStrip.ResumeLayout(false);
             this.menuStrip.PerformLayout();
             this.ResumeLayout(false);
@@ -158,13 +166,14 @@
         private System.Windows.Forms.ToolStripMenuItem msiKhachHang;
         private System.Windows.Forms.ToolStripMenuItem msiSanPham;
         private System.Windows.Forms.ToolStripMenuItem msiHoaDon;
-        private System.Windows.Forms.ToolStripMenuItem msThongKe;
+        private System.Windows.Forms.ToolStripMenuItem msThongKe_TK;
         private System.Windows.Forms.ToolStripMenuItem msXuatFile;
         private System.Windows.Forms.Label labelBHX;
         private System.Windows.Forms.ToolStripMenuItem msiDSNV;
         private System.Windows.Forms.ToolStripMenuItem msiDSKH;
         private System.Windows.Forms.ToolStripMenuItem msiDSSP;
         private System.Windows.Forms.ToolStripMenuItem msiDSHD;
+        private System.DirectoryServices.DirectorySearcher directorySearcher1;
     }
 }
 

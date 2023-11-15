@@ -15,7 +15,7 @@ namespace QLSieuThiBHX.GUI
 {
     public partial class FormHoaDon : Form
     {
-        //
+        //Object DAO
         DAO_NhanVien dao_NhanVien = new DAO_NhanVien();
         DAO_KhachHang dao_KhachHang = new DAO_KhachHang();
         DAO_SanPham dao_SanPham = new DAO_SanPham();
@@ -95,10 +95,13 @@ namespace QLSieuThiBHX.GUI
         {
             txtMaHD.Clear();
             cobTenNV.Items.Clear();
+            cobTenNV.Text = string.Empty;
             cobTenKH.Items.Clear();
+            cobTenKH.Text = string.Empty;
             dtpHoaDon.Text = "01/01/2020";
 
             LoadListView();
+            LoadComboBox();
         }
 
         //LIST VIEW
@@ -184,8 +187,7 @@ namespace QLSieuThiBHX.GUI
 
         private void btnLamMoiSP_Click(object sender, EventArgs e)
         {
-            LoadListView();
-            LoadComboBox();
+            Refresh_HD();
         }
     }
 }
